@@ -1,1 +1,12 @@
-Hello World!
+
+<div>
+    <ul>
+        <li *ngFor="let hiragana of hiraganas">
+            {{hiragana.romaji}}
+            <p>{{hiragana.hiragana}}</p>
+            <button (click)="removeHiragana(hiragana)">X</button>
+        </li>
+    </ul>
+    <words-form></words-form>
+</div>
+
