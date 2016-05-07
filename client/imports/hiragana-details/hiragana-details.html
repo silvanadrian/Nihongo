@@ -1,0 +1,11 @@
+<form (submit)="saveHiragana(hiragana)" *ngIf="hiragana">
+    <label>Romaji</label>
+    <input type="text" [(ngModel)]="hiragana.romaji">
+
+    <label>Hiragana</label>
+    <input type="text" [(ngModel)]="hiragana.hiragana">
+
+    <button type="submit">Save</button>
+    <button [routerLink]="['/HiraganasList']">Cancel</button>
+</form>
+

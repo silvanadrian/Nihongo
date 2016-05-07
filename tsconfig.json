@@ -10,8 +10,12 @@
     "noImplicitAny": false,
     "sourceMap": true
   },
-  "files": [
-    "typings/main.d.ts",
-    "typings/angular2-meteor/angular2-meteor.d.ts"
+  "filesGlob": [
+    "client/**/*.ts",
+    "server/**/*.ts",
+    "typings/**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }

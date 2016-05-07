@@ -1,7 +1,9 @@
-<form [ngFormModel]="wordsForm" #f="ngForm" (submit)="addWord(f.value)">
-    <label>Japanisch</label>
-    <input type="text" ngControl="japanisch"/>
-    <label>Deutsch</label>
-    <input type="text" ngControl="deutsch"/>
-    <button>Add</button>
+<form [ngFormModel]="wordsForm" #f="ngForm" (submit)="addWord(f.value)" class="form-inline">
+    <fieldset class="form-group">
+        <label for="romaji">Japanisch</label> <br>
+        <input id="romaji" class="form-control" type="text" ngControl="japanisch"/> <br>
+        <label for="deutsch">Deutsch</label> <br>
+        <input id="deutsch" class="form-control" type="text" ngControl="deutsch"/>  <br>
+        <button class="btn btn-primary">Add</button>
+    </fieldset>
 </form>

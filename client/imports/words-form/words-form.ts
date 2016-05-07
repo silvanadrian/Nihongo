@@ -2,6 +2,7 @@ import 'reflect-metadata';
 import {Component} from 'angular2/core';
 import {FormBuilder, ControlGroup, Validators, Control} from 'angular2/common';
 import {Words} from '../../../collections/words.ts';
+import {MeteorComponent} from "angular2-meteor/build/index";
 
 @Component({
     selector: 'words-form',
@@ -22,16 +23,12 @@ export class WordsForm {
 
     addWord(word) {
         if (this.wordsForm.valid) {
-
             Words.insert({
-                name: word.name,
-                description: word.description,
-                location: word.location
-
+                japanisch: word.japanisch,
+                deutsch: word.deutsch
             });
-            (this.wordsForm.controls['name']).updateValue('');
-            (this.wordsForm.controls['description']).updateValue('');
-            (this.wordsForm.controls['location']).updateValue('');
+            (this.wordsForm.controls['japanisch']).updateValue('');
+            (this.wordsForm.controls['deutsch']).updateValue('');
 
         }
     }

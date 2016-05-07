@@ -1,0 +1,24 @@
+<div>
+    <div class="jumbotron">
+        <h3>Create a new word!</h3>
+        <words-form [hidden]="!user"></words-form>
+        <div [hidden]="user">You need to login to create new words!</div>
+    </div>
+    <!--
+    <input type="text" #searchtext placeholder="Search by Romaji">
+    <button type="button" (click)="search(searchtext.value)">Search</button>
+    -->
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let hiragana of hiraganas | paginate:{currentPage: 1, itemsPerPage: pageSize, totalItems: hiraganasSize}">
+                    <a [routerLink]="['/HiraganaDetails', {hiraganaId: hiragana._id}]">{{hiragana.romaji}}</a>
+                    <p>{{hiragana.hiragana}}</p>
+                    <button (click)="removeHiragana(hiragana)">X</button>
+                </li>
+            </ul>
+         </div>
+    </div>
+    <pagination-controls (change)="onPageChanged($event.page)"></pagination-controls>
+</div>
+
