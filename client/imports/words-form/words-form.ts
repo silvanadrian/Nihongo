@@ -1,6 +1,6 @@
 import 'reflect-metadata';
-import {Component} from 'angular2/core';
-import {FormBuilder, ControlGroup, Validators, Control} from 'angular2/common';
+import {Component} from '@angular/core';
+import {FormBuilder, ControlGroup, Validators, Control} from '@angular/common';
 import {Words} from '../../../collections/words.ts';
 import {MeteorComponent} from "angular2-meteor/build/index";
 

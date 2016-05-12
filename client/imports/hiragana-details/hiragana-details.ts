@@ -1,7 +1,7 @@
-import {Component} from 'angular2/core';
-import {RouteParams} from 'angular2/router';
+import {Component} from '@angular/core';
+import {RouteParams} from '@angular//router-deprecated';
 import {Hiraganas} from '../../../collections/hiraganas';
-import {RouterLink} from 'angular2/router';
+import {RouterLink} from '@angular//router-deprecated';
 import {MeteorComponent} from 'angular2-meteor';
 
 @Component({

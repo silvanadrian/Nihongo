@@ -2,10 +2,10 @@ import 'reflect-metadata';
 import 'zone.js/dist/zone';
 import 'bootstrap4-webpack-package';
 import {LoginButtons} from 'angular2-meteor-accounts-ui';
-import {Component, provide} from 'angular2/core';
+import {Component, provide} from '@angular/core';
 import {bootstrap} from 'angular2-meteor-auto-bootstrap';
-import {ROUTER_PROVIDERS, ROUTER_DIRECTIVES, RouteConfig} from 'angular2/router';
-import {APP_BASE_HREF} from 'angular2/platform/common';
+import {ROUTER_PROVIDERS, ROUTER_DIRECTIVES, RouteConfig} from '@angular/router-deprecated';
+import {APP_BASE_HREF} from '@angular/common';
 import {HiraganasList} from './imports/hiraganas-list/hiraganas-list';
 import {HiraganaDetails} from './imports/hiragana-details/hiragana-details';
 import {Homepage} from './imports/homepage/homepage';
@@ -13,7 +13,7 @@ import {Homepage} from './imports/homepage/homepage';
 @Component({
   selector: 'app',
   templateUrl: '/client/app.html',
-  directives: [ROUTER_DIRECTIVES,LoginButtons ]
+  directives: [ROUTER_DIRECTIVES,  ]
 })
 @RouteConfig([
   { path: '/', as: 'Homepage', component: Homepage},
@@ -23,4 +23,4 @@ import {Homepage} from './imports/homepage/homepage';
 
 class Nihongo {}
 
-bootstrap(Nihongo, [ROUTER_PROVIDERS, provide(APP_BASE_HREF, { useValue: '/' })]);
+bootstrap(Nihongo, [ROUTER_PROVIDERS,provide(APP_BASE_HREF, { useValue: '/' })]);

@@ -1,11 +1,11 @@
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
 import {Hiraganas} from '../../../collections/hiraganas';
 import {Mongo} from 'meteor/mongo';
 import {WordsForm} from '../words-form/words-form';
-import {RouterLink} from 'angular2/router';
+import {RouterLink} from '@angular//router-deprecated';
 import {MeteorComponent} from 'angular2-meteor';
 import {Counts} from 'meteor/tmeasday:publish-counts';
-import {PaginationService, PaginatePipe, PaginationControlsCmp} from 'angular2-pagination';
+import {PaginationService, PaginatePipe, PaginationControlsCmp} from 'ng2-pagination';
 
 @Component({
     selector: 'hiraganas-list',
