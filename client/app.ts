@@ -1,24 +1,29 @@
 import 'reflect-metadata';
 import 'zone.js/dist/zone';
 import 'bootstrap4-webpack-package';
-import {LoginButtons} from 'angular2-meteor-accounts-ui';
-import {Component, provide} from '@angular/core';
+import {Component, provide, enableProdMode} from '@angular/core';
 import {bootstrap} from 'angular2-meteor-auto-bootstrap';
 import {ROUTER_PROVIDERS, ROUTER_DIRECTIVES, RouteConfig} from '@angular/router-deprecated';
 import {APP_BASE_HREF} from '@angular/common';
-import {HiraganasList} from './imports/hiraganas-list/hiraganas-list';
-import {HiraganaDetails} from './imports/hiragana-details/hiragana-details';
+import {HiraganaLessons} from './imports/hiragana-lessons/hiragana-lessons';
+import {KatakanaLessons} from './imports/katakana-lessons/katakana-lessons';
+import {LessonDetails} from './imports/lesson-details/lesson-details';
 import {Homepage} from './imports/homepage/homepage';
+
+enableProdMode();
+
 
 @Component({
   selector: 'app',
   templateUrl: '/client/app.html',
-  directives: [ROUTER_DIRECTIVES,  ]
+  directives: [ROUTER_DIRECTIVES ]
 })
 @RouteConfig([
   { path: '/', as: 'Homepage', component: Homepage},
-  { path: '/hiragana/', as: 'HiraganasList', component: HiraganasList},
-  { path: '/hiragana/:hiraganaId', as: 'HiraganaDetails', component: HiraganaDetails}
+  { path: '/hiragana/', as: 'Hiragana', component: HiraganaLessons},
+  { path: '/katakana/', as: 'Katakana', component: KatakanaLessons},
+  { path: '/hiragana/:lessonId', as: 'LessonDetails', component: LessonDetails},
+  { path: '/katakana/:lessonId', as: 'LessonDetails', component: LessonDetails}
 ])
 
 class Nihongo {}

@@ -1,9 +1,9 @@
 import {Mongo} from 'meteor/mongo';
 import {Meteor} from 'meteor/meteor';
 
-export var Hiraganas = new Mongo.Collection<Hiragana>('hiraganas');
+export var Lessons = new Mongo.Collection<Lesson>('lessons');
 
-Hiraganas.allow({
+Lessons.allow({
     insert: function() {
         let user = Meteor.user();
 

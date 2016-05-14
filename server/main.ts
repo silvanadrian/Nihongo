@@ -1,6 +1,6 @@
 import {Meteor} from "meteor/meteor";
-import {loadHiraganas} from './load-hiraganas.ts';
-import './hiraganas.ts';
+import {loadLessons} from './load-lessons.ts';
+import './lessons';
 
-Meteor.startup(loadHiraganas);
+Meteor.startup(loadLessons);
 

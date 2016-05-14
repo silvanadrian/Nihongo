@@ -1,0 +1,23 @@
+<div *ngIf="lesson">
+    <div class="jumbotron">
+        <h2>{{lesson.name}}</h2>
+        <p>{{lesson.description}}</p>
+    </div>
+
+    <div *ngIf="lesson.type == 'hiragana'">
+        <p *ngFor="let hiragana of lesson.data">
+            {{hiragana.romaji}}
+            {{hiragana.hiragana}}
+        </p>
+    </div>
+
+    <div *ngIf="lesson.type == 'katakana'">
+        <p *ngFor="let katakana of lesson.data">
+            {{katakana.romaji}}
+            {{katakana.katakana}}
+        </p>
+    </div>
+
+
+
+</div>

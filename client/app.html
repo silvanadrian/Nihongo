@@ -3,10 +3,13 @@
         &#9776;
     </button>
     <div class="container collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-        <a class="navbar-brand" href="/">日本語</a>
+        <a class="navbar-brand" [routerLink]="['/Homepage']">日本語</a>
         <ul class="nav navbar-nav pull-right">
             <li class="nav-item">
-                <a class="nav-link" href="/hiragana/">Hiragana</a>
+                <a class="nav-link" [routerLink]="['/Hiragana']">Hiragana</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/Katakana']">Katakana</a>
             </li>
         </ul>
         <!-- <login-buttons class="pull-right"></login-buttons> -->
