@@ -1,5 +1,6 @@
 [{
   "name": "Lesson 1",
+  "permalink": "katakana-lesson-1",
   "type" : "katakana",
   "description" : "First Lesson of katakana",
   "data" : [
@@ -17,8 +18,9 @@
     ] },
   {
     "name": "Lesson 2",
+    "permalink": "katakana-lesson-2",
     "type" : "katakana",
-    "description" : "First Lesson of katakana",
+    "description" : "Second Lesson of katakana",
     "data" : [
   {"romaji":"shi","katakana":"シ"},
   {"romaji":"su","katakana":"ス"},
@@ -35,8 +37,9 @@
       ] },
   {
     "name": "Lesson 3",
+    "permalink": "katakana-lesson-3",
     "type" : "katakana",
-    "description" : "First Lesson of katakana",
+    "description" : "Third Lesson of katakana",
     "data" : [
     {"romaji":"ne","katakana":"ネ"},
     {"romaji":"no","katakana":"ノ"},
@@ -53,8 +56,9 @@
       ] },
   {
     "name": "Lesson 4",
+    "permalink": "katakana-lesson-4",
     "type" : "katakana",
-    "description" : "First Lesson of katakana",
+    "description" : "Fourth Lesson of katakana",
     "data" : [
       {"romaji":"ya","katakana":"ヤ"},
       {"romaji":"yu","katakana":"ズ"},
@@ -71,8 +75,9 @@
   },
   {
     "name": "Lesson 5",
+    "permalink": "katakana-lesson-5",
     "type" : "katakana",
-    "description" : "First Lesson of katakana",
+    "description" : "Fifth Lesson of katakana",
     "data" : [
       {"romaji":"ga","katakana":"ガ"},
       {"romaji":"gi","katakana":"ギ"},
@@ -91,8 +96,9 @@
   },
   {
     "name": "Lesson 6",
+    "permalink": "katakana-lesson-6",
     "type" : "katakana",
-    "description" : "First Lesson of katakana",
+    "description" : "Sixth Lesson of katakana",
     "data" : [
       {"romaji":"de","katakana":"デ"},
       {"romaji":"do","katakana":"ド"},
@@ -110,8 +116,9 @@
   },
   {
     "name": "Lesson 7",
+    "permalink": "katakana-lesson-7",
     "type" : "katakana",
-    "description" : "First Lesson of katakana",
+    "description" : "Secenth Lesson of katakana",
     "data" : [
       {"romaji":"kya","katakana":"キャ"},
       {"romaji":"kyu","katakana":"キュ"},
@@ -128,8 +135,9 @@
   },
   {
     "name": "Lesson 8",
+    "permalink": "katakana-lesson-8",
     "type" : "katakana",
-    "description" : "First Lesson of katakana",
+    "description" : "Eighth Lesson of katakana",
     "data" : [
       {"romaji":"nyo","katakana":"ニョ"},
       {"romaji":"hya","katakana":"ヒャ"},

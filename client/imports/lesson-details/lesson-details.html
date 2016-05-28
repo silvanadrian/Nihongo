@@ -5,19 +5,37 @@
     </div>
 
     <div *ngIf="lesson.type == 'hiragana'">
-        <p *ngFor="let hiragana of lesson.data">
-            {{hiragana.romaji}}
-            {{hiragana.hiragana}}
-        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Romaji</th>
+                    <th>Hiragana</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let hiragana of lesson.data">
+                <td>{{hiragana.romaji}}</td>
+                <td>{{hiragana.hiragana}}</td>
+            </tr>
+            </tbody>
+        </table>
+
     </div>
 
     <div *ngIf="lesson.type == 'katakana'">
-        <p *ngFor="let katakana of lesson.data">
-            {{katakana.romaji}}
-            {{katakana.katakana}}
-        </p>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Romaji</th>
+                <th>Katakana</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let katakana of lesson.data">
+                <td>{{katakana.romaji}}</td>
+                <td>{{katakana.katakana}}</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
-
-
-
 </div>

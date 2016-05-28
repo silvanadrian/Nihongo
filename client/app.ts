@@ -1,6 +1,5 @@
 import 'reflect-metadata';
 import 'zone.js/dist/zone';
-import 'bootstrap4-webpack-package';
 import {Component, provide, enableProdMode} from '@angular/core';
 import {bootstrap} from 'angular2-meteor-auto-bootstrap';
 import {ROUTER_PROVIDERS, ROUTER_DIRECTIVES, RouteConfig} from '@angular/router-deprecated';
@@ -22,8 +21,8 @@ enableProdMode();
   { path: '/', as: 'Homepage', component: Homepage},
   { path: '/hiragana/', as: 'Hiragana', component: HiraganaLessons},
   { path: '/katakana/', as: 'Katakana', component: KatakanaLessons},
-  { path: '/hiragana/:lessonId', as: 'LessonDetails', component: LessonDetails},
-  { path: '/katakana/:lessonId', as: 'LessonDetails', component: LessonDetails}
+  { path: '/hiragana/:permalink', as: 'HiraganaDetails', component: LessonDetails},
+  { path: '/katakana/:permalink', as: 'KatakanaDetails', component: LessonDetails}
 ])
 
 class Nihongo {}

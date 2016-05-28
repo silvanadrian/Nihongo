@@ -4,7 +4,7 @@ import {Lessons} from '../collections/lessons.ts';
 export function loadLessons() {
 
     if (Lessons.find({type: 'hiragana'}).count() === 0) {
-        var hiraganas = JSON.parse(Assets.getText("hiraganas.json"));
+        var hiraganas = JSON.parse(Assets.getText("hiragana.json"));
 
         for (var i = 0; i < hiraganas.length; i++) {
 

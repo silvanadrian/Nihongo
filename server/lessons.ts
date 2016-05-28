@@ -5,6 +5,6 @@ Meteor.publish('lessons',function() {
     return Lessons.find({});
 });
 
-Meteor.publish('lesson', function(lessonId: string) {
-    return Lessons.find({_id: lessonId});
+Meteor.publish('lesson', function(permalink: string) {
+    return Lessons.find({permalink: permalink});
 });

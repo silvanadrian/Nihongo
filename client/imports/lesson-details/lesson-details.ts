@@ -15,10 +15,10 @@ export class LessonDetails extends MeteorComponent {
 
     constructor(params: RouteParams) {
         super();
-        let lessonId = params.get('lessonId');
+        let permalink = params.get('permalink');
         this.autorun(() => {
-        this.subscribe('lesson',lessonId, () => {
-            this.lesson = Lessons.findOne(lessonId);
+        this.subscribe('lesson',permalink, () => {
+            this.lesson = Lessons.findOne({permalink: permalink});
         }, true);
         });
 
